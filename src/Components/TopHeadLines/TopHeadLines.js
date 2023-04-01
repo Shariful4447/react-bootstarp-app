@@ -9,14 +9,18 @@ const TopHeadLines = () => {
     useEffect(() => {
         fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=fd4d720dd7794e26a268d8bb298dca39')
         .then(res => res.json())
-        //.then(res => console.log(res))
-        .then(data => setArticle(data.articles))
+        
+        .then(data => {
+            console.log(data);
+            
+            setArticle(data.articles)})
+
     }, [])
     return (
         <div>
             <h1>TOP HEADLINES: {articles.length}</h1>
             {
-                articles.map(article => <News article={article}></News>)  
+                articles.map((article,index)=> <News key={index} article={article}></News>)  
             }
 
         </div>

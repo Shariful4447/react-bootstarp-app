@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const News = (props) => {
-    const {title} = props.article;
+    const { title, description } = props.article;
     
 
     
@@ -14,8 +14,8 @@ const News = (props) => {
                 <Card.Header>Featured</Card.Header>
                 <Card.Body>
                     
-                    <Card.Title></Card.Title>
-                    <Card.Text></Card.Text>
+                    <p>{title}</p>
+                    <Card.Text>{description}</Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>

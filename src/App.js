@@ -12,7 +12,7 @@ function App() {
       
      <Header></Header>
      <TopHeadLines></TopHeadLines>
-      <News></News>
+      
       
     </div>
   );

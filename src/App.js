@@ -2,13 +2,16 @@
 import './App.css';
 import { Button } from 'react-bootstrap';
 import News from './Components/News/News';
+import Header from './Components/Header/Header';
+import TopHeadLines from './Components/TopHeadLines/TopHeadLines';
 
 function App() {
   
   return (
     <div>
-      <h2>React Bootstarp</h2>
-     
+      
+     <Header></Header>
+     <TopHeadLines></TopHeadLines>
       <News></News>
       
     </div>
